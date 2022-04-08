@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .selfhead {
+            font-size: 90px;
+            font-weight: bolder;
+            font-family: 'Baloo Chettan 2', cursive;
+        }
+
+        @media only screen and (max-width:485px) {
+            .selfhead {
+                font-size: 50px;
+                font-weight: bold;
+            }
+        }
+        section{
+    padding-top: 40px;
+}
+section .content{
+    width: 70%;
+    margin: 40px auto;
+    font-family: 'poppins',sans-serif;
+    float: left;
+    position: relative;
+    margin-left: 20px;
+}
+section .content1{
+    width: 70%;
+    margin: 40px auto;
+    font-family: 'poppins',sans-serif;
+    float: right;
+    position: relative;
+    margin-right: 20px;
+}
+
+.about .about-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .about-details .left{
+    width: 0%;
+}
+.about .left img{
+    width:300px;
+    
+    
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.about .about-details .right{
+    width: 70%;
+    position: relative;
+    float: right;
+    flex-direction: column-reverse;
+    /* font-family: 'Otomanopee One', sans-serif; */
+    
+}
+section .heading{
+
+    color: black;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 1000;
+    margin-bottom: 10px;
+    
+}
+.about-details .right p{
+    text-align: justify;
+    color: black;
+}
+
+
+.dev{
+    text-align: center;
+    margin: 20px;
+}
+
+@media (max-width:1000px){
+    .about .about-details{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about .about-details .left{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .about .about-details .right{
+        width: 90%;
+        margin:40px 0;
+    }
+    section .content{
+    width: 70%;
+    margin: 40px auto;
+    font-family: 'poppins',sans-serif;
+    position: relative;
+    float: none;
+    
+}
+section .content1{
+    width: 70%;
+    margin: 40px auto;
+    font-family: 'poppins',sans-serif;
+    align-items: center;
+    position: relative;
+    float: none;
+  
+    
+}
+}
+@media (max-width:900px){
+    .about .left img{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+        
+    </style>
+
+    <title>AKTU Library +</title>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Devil Coder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Pages/pbooks.html">Programming Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Pages/semester.html">Semester Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Pages/developers.html">Developers</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="dev">DEVELOPERS</h1>
+    <section class="about" id=about>
+        <div class="content">
+            
+            <div class="about-details">
+                <div class="left" data-tilt>
+                    <img src="https://avatars.githubusercontent.com/u/74558781?v=4" alt="poprtfolio" width="200" height="200">
+                </div>
+                <div class="right">
+                    <div style="color: red ;  border-radius: 20px; font: bold;" class="heading">Akshay Singh <span id="zeb2" style="color: darkgreen;"></span></div>
+                    <p style=" font-family: 'Otomanopee One', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti consectetur molestias sit
+                        tempore cumque tempora quis commodi dolorem veniam eos. Eveniet, voluptas? Culpa tenetur, in
+                        magnam eius repudiandae est incidunt qui porro tempore deleniti, non quae laborum aperiam nisi
+                        rerum error. Distinctio, tempora! Eius iure dolorum saepe incidunt provident placeat. Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Et enim expedita nobis quae obcaecati hic.
+                        
+                    </p>
+                    <a href="https://www.instagram.com/vivek_raj_singh__/"><i class="fab fa-instagram"></i></a> 
+                    <a href="https://www.github.com/akshay2002singh" style="color: red;"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id=about>
+        <div class="content1">
+            
+            <div class="about-details">
+                <div class="left" data-tilt>
+                    <img  src="https://avatars.githubusercontent.com/u/84335962?v=4" alt="poprtfolio" width="200" height="200">
+                </div>
+                <div class="right">
+                    <div style="color: red ;  border-radius: 20px; font: bold;" class="heading">Vivek Raj Singh  <span id="zeb2" style="color: darkgreen;"></span></div>
+                    <p style=" font-family: 'Otomanopee One', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti consectetur molestias sit
+                        tempore cumque tempora quis commodi dolorem veniam eos. Eveniet, voluptas? Culpa tenetur, in
+                        magnam eius repudiandae est incidunt qui porro tempore deleniti, non quae laborum aperiam nisi
+                        rerum error. Distinctio, tempora! Eius iure dolorum saepe incidunt provident placeat. Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Et enim expedita nobis quae obcaecati hic.
+                        
+                    </p>
+                    <a href="https://www.instagram.com/vivek_raj_singh__/"><i class="fab fa-instagram"></i></a> 
+                    <a href="https://www.github.com/vivek-raj-singh" style="color: red;"><i class="fab fa-github"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <footer class=" py-1 text-muted text-center text-small bg-dark">
+        <p class="mb-1">&copy; 2020-2021 Devil Coder</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="">Privacy</a></li>
+            <li class="list-inline-item"><a href="">Terms</a></li>
+            <li class="list-inline-item"><a href="">Support</a></li>
+        </ul>
+    </footer>
+
+</body>
