@@ -2,184 +2,170 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Books</title>
+  <link rel="stylesheet" href="./Components/footer.css">
+  <link rel="stylesheet" href="./Components/nav.css">
+  <style>
+    * {
+      padding: 0px 0px;
+      margin: 0px 0px;
+    }
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@700&display=swap" rel="stylesheet">
-    <style>
-        .selfhead {
-            font-size: 90px;
-            font-weight: bolder;
-            font-family: 'Baloo Chettan 2', cursive;
-        }
-
-        @media only screen and (max-width:485px) {
-            .selfhead {
-                font-size: 50px;
-                font-weight: bold;
+    body {
+      /* background-color: rgb(46, 46, 46); */
+    }
+    /* heading  */
+    #main_heading{
+      background: rgb(254, 186, 255);
+      padding-bottom: 10px;
+      text-align: center;
+      color: rgb(0, 0, 0);
+      font-size: 65px;
+      font-weight:bold;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    @media only screen and (max-width:750px) {
+      #main_heading {
+                font-size: 30px;
             }
         }
-    </style>
 
-    <title>Programming Books</title>
+
+    #card_container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 90%;
+      margin: auto;
+      justify-content: space-around;
+    }
+
+    /* card  */
+    .card {
+      margin: 15px 10px;
+      min-width: 230px;
+      width: 30%;
+      border-radius: 20px;
+      padding: 5px;
+      box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+      background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    }
+
+    .card__content {
+      background: rgb(5, 6, 45);
+      border-radius: 17px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .card_img {
+      width: 90%;
+      margin: auto;
+      padding-top: 15px;
+    }
+
+    .card_img img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card__content_text {
+      display: block;
+      margin: 15px 15px;
+      color: #5dc6ff;
+      font-size: 1.2rem;
+      /* height: 50px; */
+    }
+    .btn_holder{
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 20px;
+    }
+    /* card button  */
+    .btn_holder a{
+      text-decoration: none;
+    }
+    .cssbuttons-io-button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-family: inherit;
+      font-weight: 500;
+      font-size: 17px;
+      padding: 0.6em 1.5em 0.6em 1.2em;
+      color: white;
+      background: #ad5389;
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(77, 54, 208, 1)), to(rgba(132, 116, 254, 1)));
+      background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
+      border: none;
+      -webkit-box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+      box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+      letter-spacing: 0.05em;
+      border-radius: 20em;
+    }
+
+    .cssbuttons-io-button svg {
+      margin-right: 8px;
+    }
+
+    .cssbuttons-io-button:hover {
+      -webkit-box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
+      box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
+      cursor: pointer;
+    }
+
+    .cssbuttons-io-button:active {
+      -webkit-box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
+      box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
+    }
+  </style>
 </head>
 
 <body>
-    <!-- navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Devil Coder</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="../index.html">Home</a>
-                    </li>
+  <!-- nav bar  -->
+  <script src="./Components/nav.js"></script>
+  <!-- heading -->
+  <h1 id="main_heading">
+    Programming Books
+  </h1>
+  <!-- books container  -->
+  <div id="card_container">
+  </div>
 
-                    <li class="nav-item">
-                        <a class="nav-link  active" href="../Pages/pbooks.html">Programming Books</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Pages/semester.html">Semester Books</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Pages/developers.html">Developers</a>
-                    </li>
-                </ul>
-            </div>
+  <script>
+    let books = [["Practical C++ Programming","png"],["An Introduction to the C Programming Language","jpg"],["LEARNING PHP","png"],["Eloquent JavaScript","jpg"],["An Introduction to Programming in Go","png"],["Learning Python","jpg"]];
+    for (let i=0; i < books.length; i++) {
+      let card = `<div class="card">
+      <div class="card__content">
+        <div class="card_img">
+          <img src="../content/images/pbooks/${books[i][0]}.${books[i][1]}" alt="" srcset="">
         </div>
-    </nav>
-    <!-- navbar end -->
-
-
-
-    <div class="alert alert-danger alert-dismissible fade show mb-0 text-center text-dark" role="alert">
-        <strong class="display-4 " style="font-weight: bold;">Programming Books</strong>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-
-    <!-- books  -->
-    <div class="album bg-light pt-4" id="E-Books">
-        <div class="container">
-            <!-- <div class="selfhead text-center">
-                E-Books
-            </div> -->
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="../content/images/pbooks/1e.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Practical C++ Programming</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="../content/pdfbooks/pbooks/C++.pdf" target="_blank"><button type="button"
-                                            class="btn btn-sm btn-outline-secondary">Download</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="../content/images/pbooks/2e.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">An Introduction to the C Programming Language</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="../content/pdfbooks/pbooks/C.pdf" target="_blank"><button type="button"
-                                            class="btn btn-sm btn-outline-secondary">Download</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="../content/images/pbooks/3e.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">LEARNING PHP</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="../content/pdfbooks/pbooks/PHP.pdf" target="_blank"><button type="button"
-                                            class="btn btn-sm btn-outline-secondary">Download</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="../content/images/pbooks/4e.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Eloquent JavaScript</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="../content/pdfbooks/pbooks/JS.pdf" target="_blank"><button type="button"
-                                            class="btn btn-sm btn-outline-secondary">Download</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="../content/images/pbooks/5e.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">An Introduction to Programming in Go</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="../content/pdfbooks/pbooks/GO.pdf" target="_blank"><button type="button"
-                                            class="btn btn-sm btn-outline-secondary">Download</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="../content/images/pbooks/6e.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Learning Python</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="../content/pdfbooks/pbooks/PYTHON.pdf" target="_blank"><button type="button"
-                                            class="btn btn-sm btn-outline-secondary">Download</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <span class="card__content_text">${books[i][0]}</span>
+        <div class="btn_holder">
+          <a href="../content/pdfbooks/pbooks/${books[i][0]}.pdf">
+          <button class="cssbuttons-io-button">
+            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path
+              d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z"
+              fill="currentColor"></path>
+            </svg>
+            <span>Download</span>
+          </button>
+        </a>
         </div>
-    </div>
-
-
-
-    <!-- footer -->
-    <footer class=" py-1 text-muted text-center text-small bg-dark">
-        <p class="mb-1">&copy; 2020-2021 Devil Coder</p>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="">Privacy</a></li>
-            <li class="list-inline-item"><a href="">Terms</a></li>
-            <li class="list-inline-item"><a href="">Support</a></li>
-        </ul>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
+      </div>
+    </div>`;
+      console.log(card)
+      document.getElementById("card_container").innerHTML += card; 
+    }
+  </script>
+  <script src="./Components/footer.js"></script>
 </body>
 
 </html>

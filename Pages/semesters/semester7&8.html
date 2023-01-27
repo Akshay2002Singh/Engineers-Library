@@ -131,14 +131,14 @@
   <script src="/Pages/Components/nav.js"></script>
   <!-- heading -->
   <h1 id="main_heading">
-    Semester-1&2
+    Semester-7&8
   </h1>
   <!-- books container  -->
   <div id="card_container">
   </div>
   
   <script>
-    let quantums = ["Artificial Intelligence","Basic Electrical Engineering","Chemistry","Electronics","Emerging Technology","Maths 1","Maths 2","Physics","Programming For Problem Solving","Fundamentals of Mechanical Engineering & Mechatronics","Soft Skills 1"];
+    let quantums = [];
 
     for (let i=0; i < quantums.length; i++) {
       let card = `<div class="card">
@@ -148,7 +148,7 @@
         </div>
         <span class="card__content_text">${quantums[i]}</span>
         <div class="btn_holder">
-          <a href="/content/pdfbooks/Semester/Sem 1&2/${quantums[i]}.pdf">
+          <a href="/content/pdfbooks/Semester/sem 1&2/${quantums[i]}.pdf">
           <button class="cssbuttons-io-button">
             <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 0h24v24H0z" fill="none"></path>
