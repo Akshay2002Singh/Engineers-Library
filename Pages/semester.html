@@ -95,9 +95,14 @@
         @media only screen and (max-width:750px) {
             #main_heading {
                 font-size: 35px;
+                z-index: inherit;
             }
             #particles-js {
-                margin-top: 150px;
+                /* margin-top: 150px; */
+                display: none;
+            }
+            .card{
+                z-index: inherit;
             }
         }
 
@@ -112,9 +117,6 @@
 
             .card_txt {
                 font-size: 30px;
-            }
-            #particles-js{
-                display: none;
             }
         }
 
@@ -131,8 +133,8 @@
     
     <!-- books container  -->
     <div id="card_container">
-        <!-- particles-js -->
         <div id="particles-js"></div>
+        <!-- particles-js -->
     </div>
 
     <script>
@@ -149,9 +151,9 @@
             document.getElementById("card_container").innerHTML += card;
         }
     </script>
-    <script src="AKTU_E-library/Pages/Components/footer.js"></script>
+    <script src="./Components/footer.js"></script>
     <!-- particles -->
-    <script src="AKTU_E-library/libraries/particles/particles.js"></script>
+    <script src="../libraries/particles/particles.js"></script>
     <script>
         particlesJS("particles-js", {
             "particles": {

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- footer and nav css  -->
+    <link rel="stylesheet" href="/Pages/Components/footer.css">
+    <link rel="stylesheet" href="/Pages/Components/nav.css">
+    <style>
+       /* heading  */
+       #main_heading {
+            position: relative;
+            z-index: 101;
+            background: rgb(254, 186, 255);
+            padding-bottom: 10px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 65px;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        @media only screen and (max-width:750px) {
+            #main_heading {
+                font-size: 35px;
+            }
+        }
+        @media only screen and (max-width:400px) {
+            #main_heading {
+                font-size: 25px;
+            }
+        }
+
+
+        section{
+    padding-top: 40px;
+}
+section .content{
+    width: 70%;
+    margin: 40px auto;
+    font-family: 'poppins',sans-serif;
+    float: left;
+    position: relative;
+    margin-left: 20px;
+}
+section .content1{
+    width: 70%;
+    margin: 40px auto;
+    font-family: 'poppins',sans-serif;
+    float: right;
+    position: relative;
+    margin-right: 20px;
+}
+
+.about .about-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .about-details .left{
+    width: 0%;
+}
+.about .left img{
+    width:300px;
+    
+    
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.about .about-details .right{
+    width: 70%;
+    position: relative;
+    float: right;
+    flex-direction: column-reverse;
+    /* font-family: 'Otomanopee One', sans-serif; */
+    
+}
+section .heading{
+
+    color: black;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 1000;
+    margin-bottom: 10px;
+    
+}
+.about-details .right p{
+    text-align: justify;
+    color: black;
+}
+
+
+.dev{
+    text-align: center;
+    margin: 20px;
+}
+
+@media (max-width:1000px){
+    .about .about-details{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about .about-details .left{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .about .about-details .right{
+        width: 90%;
+        margin:40px 0;
+    }
+    section .content{
+    width: 70%;
+    margin: 40px auto;
+    font-family: 'poppins',sans-serif;
+    position: relative;
+    float: none;
+    
+}
+section .content1{
+    width: 70%;
+    margin: 40px auto;
+    font-family: 'poppins',sans-serif;
+    align-items: center;
+    position: relative;
+    float: none;
+  
+    
+}
+}
+@media (max-width:900px){
+    .about .left img{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+        
+    </style>
+
+    <title>AKTU Library +</title>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <script src="/Pages/Components/nav.js"></script>
+
+    <h1 id="main_heading">
+        DEVELOPERS
+    </h1>
+
+
+    <section class="about" id=about>
+        <div class="content">
+            
+            <div class="about-details">
+                <div class="left" data-tilt>
+                    <img src="https://avatars.githubusercontent.com/u/74558781?v=4" alt="poprtfolio" width="200" height="200">
+                </div>
+                <div class="right">
+                    <div style="color: red ;  border-radius: 20px; font: bold;" class="heading">Akshay Singh <span id="zeb2" style="color: darkgreen;"></span></div>
+                    <p style=" font-family: 'Otomanopee One', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti consectetur molestias sit
+                        tempore cumque tempora quis commodi dolorem veniam eos. Eveniet, voluptas? Culpa tenetur, in
+                        magnam eius repudiandae est incidunt qui porro tempore deleniti, non quae laborum aperiam nisi
+                        rerum error. Distinctio, tempora! Eius iure dolorum saepe incidunt provident placeat. Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Et enim expedita nobis quae obcaecati hic.
+                        
+                    </p>
+                    <a href="https://www.instagram.com/vivek_raj_singh__/"><i class="fab fa-instagram"></i></a> 
+                    <a href="https://www.github.com/akshay2002singh" style="color: red;"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id=about>
+        <div class="content1">
+            
+            <div class="about-details">
+                <div class="left" data-tilt>
+                    <img  src="https://avatars.githubusercontent.com/u/84335962?v=4" alt="poprtfolio" width="200" height="200">
+                </div>
+                <div class="right">
+                    <div style="color: red ;  border-radius: 20px; font: bold;" class="heading">Vivek Raj Singh  <span id="zeb2" style="color: darkgreen;"></span></div>
+                    <p style=" font-family: 'Otomanopee One', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti consectetur molestias sit
+                        tempore cumque tempora quis commodi dolorem veniam eos. Eveniet, voluptas? Culpa tenetur, in
+                        magnam eius repudiandae est incidunt qui porro tempore deleniti, non quae laborum aperiam nisi
+                        rerum error. Distinctio, tempora! Eius iure dolorum saepe incidunt provident placeat. Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Et enim expedita nobis quae obcaecati hic.
+                        
+                    </p>
+                    <a href="https://www.instagram.com/vivek_raj_singh__/"><i class="fab fa-instagram"></i></a> 
+                    <a href="https://www.github.com/vivek-raj-singh" style="color: red;"><i class="fab fa-github"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    
+    <script src="/Pages/Components/footer.js"></script>
+
+</body>
