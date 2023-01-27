@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Semester 7&8</title>
-  <link rel="stylesheet" href="/Pages/Components/footer.css">
-  <link rel="stylesheet" href="/Pages/Components/nav.css">
+  <link rel="stylesheet" href="../Components/footer.css">
+  <link rel="stylesheet" href="../Components/nav.css">
   <style>
     * {
       padding: 0px 0px;
@@ -128,7 +128,7 @@
 
 <body>
   <!-- nav bar  -->
-  <script src="/Pages/Components/nav.js"></script>
+  <script src="../Components/nav.js"></script>
   <!-- heading -->
   <h1 id="main_heading">
     Semester-7&8
@@ -144,11 +144,11 @@
       let card = `<div class="card">
       <div class="card__content">
         <div class="card_img">
-          <img src="AKTU_E-library/Pages/content/images/quantum.jpeg" alt="quantum image" srcset="">
+          <img src="../../content/images/quantum.jpeg" alt="quantum image" srcset="">
         </div>
         <span class="card__content_text">${quantums[i]}</span>
         <div class="btn_holder">
-          <a href="AKTU_E-library/Pages/content/pdfbooks/Semester/sem 1&2/${quantums[i]}.pdf">
+          <a href="../../content/pdfbooks/Semester/sem 1&2/${quantums[i]}.pdf">
           <button class="cssbuttons-io-button">
             <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 0h24v24H0z" fill="none"></path>
@@ -166,7 +166,7 @@
       document.getElementById("card_container").innerHTML += card; 
     }
   </script>
-  <script src="/Pages/Components/footer.js"></script>
+  <script src="../Components/footer.js"></script>
 </body>
 
 </html>
