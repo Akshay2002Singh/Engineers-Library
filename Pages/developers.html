@@ -11,8 +11,14 @@
     <link rel="stylesheet" href="./Components/nav.css">
     <style>
         /* heading  */
+        nav{
+            position: relative;
+            z-index: 111;
+        }
         #main_heading {
             background: rgb(254, 186, 255);
+            position: relative;
+            z-index: 11;
             padding-bottom: 10px;
             text-align: center;
             color: rgb(0, 0, 0);
@@ -23,10 +29,11 @@
         /* particles css  */
         #particles-js {
             position: fixed;
+            top: 0px;
             /* margin-top: 190px; */
             /* z-index: 0; */
             width: 100%;
-            height: 80%;
+            height: 100%;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 50% 50%;
