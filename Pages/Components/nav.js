@@ -7,10 +7,10 @@ footer.innerHTML =`<nav>
 </div>
 
 <ul class="links">
-    <li><a href="/index.html">Home</a></li>
-    <li><a href="/Pages/pbooks.html">Programming Books</a></li>
-    <li><a href="/Pages/semester.html">Semester Books</a></li>
-    <li><a href="/Pages/developers.html">Developers</a></li>
+    <li><a href="AKTU_E-library/index.html">Home</a></li>
+    <li><a href="AKTU_E-library/Pages/pbooks.html">Programming Books</a></li>
+    <li><a href="AKTU_E-library/Pages/semester.html">Semester Books</a></li>
+    <li><a href="AKTU_E-library/Pages/developers.html">Developers</a></li>
 </ul>
 
 
