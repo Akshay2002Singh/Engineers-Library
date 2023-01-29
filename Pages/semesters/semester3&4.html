@@ -45,7 +45,7 @@
     /* card  */
     .card {
       margin: 15px 10px;
-      min-width: 230px;
+      min-width: 300px;
       width: 30%;
       border-radius: 20px;
       padding: 5px;
@@ -138,6 +138,7 @@
   </div>
   
   <script>
+    // for quantums 
     let quantums = ["Computer Organization Architecture","Computer System Security","Data Structure","Digital Electronics","Discrete Structures & Theory of Logic","Maths 4","Microprocessor","Operating System","Sensors & Transducers","Technical Communication","Soft Skills 1","Theory of Automata and Formal Languages","Universal Human Values & Professional Ethics"];
 
     for (let i=0; i < quantums.length; i++) {
@@ -148,7 +149,7 @@
         </div>
         <span class="card__content_text">${quantums[i]}</span>
         <div class="btn_holder">
-          <a href="../../content/pdfbooks/Semester/Sem 3&4/${quantums[i]}.pdf">
+          <a href="../../content/pdfbooks/Semester/Sem 3&4/${quantums[i]}.pdf" target="blank">
           <button class="cssbuttons-io-button">
             <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 0h24v24H0z" fill="none"></path>
@@ -162,9 +163,36 @@
         </div>
       </div>
     </div>`;
-      console.log(card)
       document.getElementById("card_container").innerHTML += card; 
     }
+
+    // for notes
+    let notes = ["Notes COA Unit 1","Notes CSS Computer Security","Notes CSS Control Hijacking","Notes CSS Email Security","Notes CSS Rootkits","Notes CSS Security Architecture Models","Notes CSS Unit 1-5","Notes CSS Unit 3 Access Control","Notes CSS Unit 4 Part 1","Notes CSS Unit 4 Part 2","Notes CSS Unit 5","Notes DSTL Graph Theory","Notes DSTL Predicate Logic","Notes DSTL Recurrence Relation","Notes DSTL Set Inclusion","Notes DSTL Set Proves","Notes DSTL Unit 1-5","Notes DSTL Unit 4","Notes DSTL Unit 5","Notes DSTL Unit 4 Logic Implementataion","Question Bank Maths 4 Unit 2","Question Bank Maths 4 Unit 3","Question Bank Maths 4 Unit 4","Question Bank Maths 4 Unit 5"];
+
+    for (let i=0; i < notes.length; i++) {
+      let card = `<div class="card">
+      <div class="card__content">
+        <div class="card_img">
+          <img src="../../content/images/notes.jpg" alt="Notes image" srcset="">
+        </div>
+        <span class="card__content_text">${notes[i]}</span>
+        <div class="btn_holder">
+          <a href="../../content/pdfbooks/Semester/Sem 3&4 notes/${notes[i]}.pdf" target="blank">
+          <button class="cssbuttons-io-button">
+            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path
+              d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z"
+              fill="currentColor"></path>
+            </svg>
+            <span>Download</span>
+          </button>
+        </a>
+        </div>
+      </div>
+    </div>`;
+      document.getElementById("card_container").innerHTML += card;
+  }
   </script>
   <script src="../Components/footer.js"></script>
 </body>
