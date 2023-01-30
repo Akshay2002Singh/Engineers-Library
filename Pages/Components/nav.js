@@ -3,7 +3,7 @@ footer.innerHTML =`<nav>
 <div class="navbar_custom">
 	
 <div class="logo">
-    <h2>Coders</h2>
+    <h2>Rapid Coders</h2>
 </div>
 
 <ul class="links">
