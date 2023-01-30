@@ -47,6 +47,9 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
         }
+        .card_link{
+            text-decoration: none;
+        }
         /* card */
         .card-client {
             z-index: 11;
@@ -213,12 +216,17 @@
     <section id="card_container">
     </section>
 
-
+</a>
     <script>
-        let developers = [{name:"Akshay Singh",image:"Akshay Singh",image_type:"jpg",post:"Developer",insta:"https://www.instagram.com/elite2002akshay/",linkedin:"https://www.linkedin.com/in/akshay-singh-elite/",twitter:"https://twitter.com/Elite_257?t=Aymfq3M6O8HugpcHhfu-5Q&s=09"},{name:"Vivek Raj Singh",image:"Vivek Raj Singh",image_type:"jpg",post:"Contributor",insta:null,linkedin:null,twitter:null},]
+        let developers = [
+            {name:"Akshay Singh",image:"Akshay Singh",image_type:"jpg",post:"Developer",insta:"https://www.instagram.com/elite2002akshay",linkedin:"https://www.linkedin.com/in/akshay-singh-elite/",twitter:"https://twitter.com/Elite_257?t=Aymfq3M6O8HugpcHhfu-5Q&s=09",github:"https://github.com/Akshay2002Singh/"},
+            {name:"Aditi Jain",image:null,image_type:"jpg",post:"Contributor",insta:null,linkedin:"https://www.linkedin.com/in/aditi-jain-86b861238/",twitter:null,github:"https://github.com/jaditi930"},
+            {name:"Vivek Raj Singh",image:"Vivek Raj Singh",image_type:"jpg",post:"Contributor",insta:"https://www.instagram.com/_vivek_raj_singh_/?igshid=YmMyMTA2M2Y%3D",linkedin:"https://www.linkedin.com/in/vivek-raj-singh-512a381b8/",twitter:null,github:"https://github.com/vivek-raj-singh"}
+        ]
         for (let i = 0; i < developers.length; ++i) {
             let card = `
             <div class="card-client">
+            ${developers[i].github?`<a href=${developers[i].github} target=_"blank" class="card_link">`:""}
             <div class="user-picture">
                 <img src="../content/images/developers/${developers[i].image}.${developers[i].image_type}" alt="poprtfolio">
             </div>
@@ -246,9 +254,10 @@
                     <span class="tooltip-social">LinkedIn</span>
                 </a>`:" "}
             </div>
+            ${developers[i].github?"</a>":""}
         </div>
             `
-            
+
             document.getElementById("card_container").innerHTML += card;
         }
     </script>
