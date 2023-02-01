@@ -15,7 +15,7 @@ footer.innerHTML =`
                 <span><i class="fab fa-instagram"></i></span>
               </li>
             </a>
-            <a href="https://codepen.io/akshay-singh-the-decoder/" target="_blank">
+            <a href="https://codepen.io/akshay2002singh" target="_blank">
               <li class="icon github">
                 <span class="tooltip">CodePen</span>
                 <span><i class="fab fa-codepen"></i></span>
